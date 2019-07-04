@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 
-const { Settings, SettingsError } = require('./../lib');
+const { Settings } = require('./../lib');
 
 describe('Settings', () => {
 
