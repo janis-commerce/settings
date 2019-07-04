@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https:/github.com/janis-commerce/settings.git"
+    "url": "https://github.com/janis-commerce/settings.git"
   },
   "author": "Janis",
   "license": "ISC",
-  "homepage": "https:/github.com/janis-commerce/settings.git#readme",
+  "homepage": "https://github.com/janis-commerce/settings.git#readme",
   "devDependencies": {
     "husky": "^2.4.1",
     "eslint": "^5.16.0",
