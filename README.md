@@ -19,6 +19,11 @@ npm install @janiscommerce/settings
 
 The setting file is a JSON with all the settings.
 
+It's located in `path/to/root/[MS_PATH]/config/.janiscommercerc.json`.
+
+`[MS_PATH]` : ENV variable. Default is empty.
+
+
 ### Example
 ```json
 {
