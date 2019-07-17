@@ -5,7 +5,7 @@
 
 ## Installation
 ```bash
-npm install janiscommerce/settings
+npm install @janiscommerce/settings
 ```
 
 ## API
