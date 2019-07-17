@@ -102,13 +102,13 @@ describe('Settings', () => {
 
 	it('should use MS_PATH as prefix when exists', () => {
 		process.env.MS_PATH = 'my-prefix';
-		assert(Settings.configPath.endsWith('/my-prefix/.janiscommercerc.json'));
+		assert(Settings.configPath.endsWith('my-prefix/config/.janiscommercerc.json'));
 	});
 
 	it('should use MS_PATH as prefix when not exists', () => {
 		// settings/ cause is the folder of the package
 		// configPath getter use process.cwd()
-		assert(Settings.configPath.endsWith('/settings/.janiscommercerc.json'));
+		assert(Settings.configPath.endsWith('settings/config/.janiscommercerc.json'));
 	});
 
 });
