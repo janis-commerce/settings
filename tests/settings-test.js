@@ -4,7 +4,7 @@ const assert = require('assert');
 const sandbox = require('sinon').createSandbox();
 const mockRequire = require('mock-require');
 
-const Settings = require('./..');
+const Settings = require('..');
 
 describe('Settings', () => {
 
