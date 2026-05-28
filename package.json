@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "export TEST_ENV=true; mocha --exit -R nyan --recursive tests/",
-    "test-ci": "nyc --reporter=html --reporter=text mocha --recursive tests/",
     "watch-test": "export TEST_ENV=true; mocha --exit -R nyan -w --recursive tests/",
     "coverage": "nyc npm test",
-    "lint": "eslint index.js lib/ tests/"
+    "lint": "eslint index.js lib/ tests/",
+    "coverage-ci": "nyc --reporter=lcov --reporter=text-summary mocha --exit --recursive tests/",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -18,19 +19,22 @@
   "license": "ISC",
   "homepage": "https://github.com/janis-commerce/settings.git#readme",
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.17.3",
-    "husky": "^2.4.1",
-    "mocha": "^5.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "husky": "^9.0.0",
+    "mocha": "^10.2.0",
     "mock-require": "^3.0.3",
-    "nyc": "^14.1.1",
-    "sinon": "^7.3.2"
+    "nyc": "^17.0.0",
+    "sinon": "^15.0.4"
   },
   "files": [
     "lib/"
   ],
   "directories": {
     "test": "tests"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
